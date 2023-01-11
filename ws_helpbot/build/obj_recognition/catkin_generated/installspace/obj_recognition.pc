@@ -1,8 +1,0 @@
-prefix=/home/cristina/ws_helpbot/install
-
-Name: obj_recognition
-Description: Description of obj_recognition
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

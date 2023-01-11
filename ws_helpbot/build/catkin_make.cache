@@ -1,2 +1,0 @@
-helpbot:obj_recognition
--DCATKIN_DEVEL_PREFIX=/home/cristina/ws_helpbot/devel -DCMAKE_INSTALL_PREFIX=/home/cristina/ws_helpbot/install -G Unix Makefiles
