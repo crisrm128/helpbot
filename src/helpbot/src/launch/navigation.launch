@@ -1,0 +1,15 @@
+<launch>
+  <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+  
+  <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_stage_4.launch"/>
+  
+  <include file="$(find turtlebot3_navigation)/launch/turtlebot3_navigation.launch">
+    <arg name="map_file" value="$(find helpbot)/src/maps/mi_mapa.yaml"/>
+  </include>
+  
+  <node pkg="obj_recognition" type="gest_recog.py" name="gest_detection"/>
+  <node pkg="obj_recognition" type="obj_recog.py" name="obj_detection"/>
+
+  <!--node pkg="helpbot" type="navigation.py" name="navigation_helpbot"-->
+
+</launch>

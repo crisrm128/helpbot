@@ -1,0 +1,4 @@
+opencv-python>=4.5.5
+numpy>=1.22.1
+mediapipe>=0.9.0.1
+rospkg>=1.4.0
